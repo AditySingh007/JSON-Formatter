@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background : #1f1f1f;
+    /* overflow: hidden; */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading{
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 2.5px;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.container{
+   display: grid;
+   grid-template-columns: auto auto;
+   align-items: center;
+   height: 80vh;
+   padding : 20px;
+   gap : 20px;
+}
+
+.area {
+    height: 100%;
+    padding: 20px;
+    color: #d1caca;
+    background : #444444;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    resize : none;
+    transition : background 0.25s color 0.25s;
+}
+
+.area:hover, .area:focus {
+    background : #484848;
+}
+
+.area:focus {
+    color : #eeeeee;
+}
+
+.controls {
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+.button {
+    padding : 8px 14px;
+    /* width : 100%; */
+    margin-bottom: 10px;
+    border-radius : 5px;
+    border : none;
+    outline : none;
+    cursor: pointer;
+    color : #ffffff;
+    font-weight : bold;
+    margin : 10px;
+}
+
+.button-format {
+    background : #009578;
+}
+
+.button-format:active {
+    background: #00705a;
+}
+
+.button-clear {
+    background : rgb(233, 14, 14);
+}
+
+.button-clear:active {
+    background :  #cc0000;
+}
